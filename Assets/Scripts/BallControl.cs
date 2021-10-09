@@ -24,6 +24,13 @@ public class BallControl : MonoBehaviour
         RestartGame();
     }
 
+    
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
     void ResetBall()
     {
         // Reset posisi menjadi (0,0)
@@ -59,7 +66,7 @@ public class BallControl : MonoBehaviour
         // Kembalikan bola ke posisi semula
         ResetBall();
 
-        // Setelah 2 detik, berikan gaya ke bola
+        // Setelah 1 detik, berikan gaya ke bola
         Invoke("PushBall", 1);
     }
 
