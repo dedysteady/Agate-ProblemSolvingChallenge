@@ -11,6 +11,17 @@ public class FollowMouse : MonoBehaviour
     public float speed;
     public float rotationOffset;
 
+    public ScoreController scoreController;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Box")
+        {
+            scoreController.IncreaseCurrentScore(1);
+            Destroy(collision.gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
