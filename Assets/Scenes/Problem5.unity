@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 146783979}
   - component: {fileID: 146783981}
   - component: {fileID: 146783983}
-  - component: {fileID: 146783984}
+  - component: {fileID: 146783982}
   m_Layer: 0
   m_Name: Lingkaran
   m_TagString: Untagged
@@ -206,7 +206,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
+  m_Mass: 0.05
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -215,6 +215,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &146783982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146783978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902195b9c36b1ba488d40082fb4bb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rotationOffset: 180
 --- !u!58 &146783983
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -231,18 +245,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!114 &146783984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146783978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 291ff22b777548d4fbcc6535ed408c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &262303756
 GameObject:
   m_ObjectHideFlags: 0
