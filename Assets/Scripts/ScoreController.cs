@@ -7,6 +7,7 @@ public class ScoreController : MonoBehaviour
 {
     public Text score;
     private int currentScore;
+    public Text gameoverScore;
 
     // Start is called before the first frame update
     private void Start()
@@ -23,5 +24,11 @@ public class ScoreController : MonoBehaviour
     public void IncreaseCurrentScore(int num)
     {
         currentScore += num;
+    }
+
+    public void EndScore()
+    {
+        gameoverScore.text = $"Score : { currentScore.ToString("0") }";
+        SoundManager.Instance.PlayGame();    
     }
 }

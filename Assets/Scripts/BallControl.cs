@@ -62,7 +62,7 @@ public class BallControl : MonoBehaviour
         // Kembalikan bola ke posisi semula
         ResetBall();
 
-        // Setelah 1 detik, berikan gaya ke bola
+        // Setelah 3 detik, berikan gaya ke bola
         Invoke("PushBall", 3);
     }
 

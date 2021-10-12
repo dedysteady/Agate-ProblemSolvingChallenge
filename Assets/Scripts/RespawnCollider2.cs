@@ -5,7 +5,7 @@ using UnityEngine;
 public class RespawnCollider2 : MonoBehaviour
 {
     [SerializeField] private GameObject spawnPrefab;
-    [SerializeField] private float spawnTime = 3f;
+    [SerializeField] private float spawnTime = 2f;
 
     private float spawnCounter;
 
@@ -13,7 +13,7 @@ public class RespawnCollider2 : MonoBehaviour
     void Start()
     {
         spawnCounter = spawnTime;
-        SpawnBox(5);
+        SpawnBox(3);
         
     }
 
@@ -25,7 +25,7 @@ public class RespawnCollider2 : MonoBehaviour
         spawnCounter -= Time.deltaTime;
         if(spawnCounter < 0.1f)
         {
-            SpawnBox(5);
+            SpawnBox(3);
             spawnCounter = spawnTime;
         }
     }

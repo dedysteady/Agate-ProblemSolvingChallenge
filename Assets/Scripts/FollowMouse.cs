@@ -12,6 +12,7 @@ public class FollowMouse : MonoBehaviour
     public float rotationOffset;
 
     public ScoreController scoreController;
+    public GameObject gameoverScreen;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +20,13 @@ public class FollowMouse : MonoBehaviour
         {
             scoreController.IncreaseCurrentScore(1);
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.tag == "Bomb")
+        {
+            scoreController.EndScore();
+            Destroy(collision.gameObject);
+            gameoverScreen.SetActive(true);
+
         }
     }
 
