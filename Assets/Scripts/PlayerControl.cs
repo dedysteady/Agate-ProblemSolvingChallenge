@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
     public KeyCode leftButton = KeyCode.A;
  
     // Kecepatan gerak
-    public float speed = 10.0f;
+    public float speed = 15.0f;
  
     // Batas atas, bawah, kanan dan kiri game scene (Batas bawah menggunakan minus (-))
     public float yBoundary = 9.0f;

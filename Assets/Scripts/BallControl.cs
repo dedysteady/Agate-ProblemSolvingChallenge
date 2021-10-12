@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -63,7 +63,7 @@ public class BallControl : MonoBehaviour
         ResetBall();
 
         // Setelah 1 detik, berikan gaya ke bola
-        Invoke("PushBall", 1);
+        Invoke("PushBall", 3);
     }
 
 
