@@ -25,4 +25,11 @@ This Project for Independent Study in Chapter 10 at Agate Academy
 # Scene
 ![image](https://user-images.githubusercontent.com/45990233/136963618-eaca1b6d-32d0-495c-923a-1ca492a20d38.png)
 
+# How to Play
+- Go to Releases
+- Download Chapter10.zip
+- Extract it
+- Run .exe
+- Set size 1280 x 720
+
 
