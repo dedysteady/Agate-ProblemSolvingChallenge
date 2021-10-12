@@ -13,6 +13,7 @@ public class FollowMouse : MonoBehaviour
 
     public ScoreController scoreController;
     public GameObject gameoverScreen;
+    public bool alive;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,7 +27,6 @@ public class FollowMouse : MonoBehaviour
             scoreController.EndScore();
             Destroy(collision.gameObject);
             gameoverScreen.SetActive(true);
-
         }
     }
 

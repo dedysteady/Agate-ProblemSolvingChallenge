@@ -6,13 +6,15 @@ public class RespawnCollider3 : MonoBehaviour
 {
     [SerializeField] private GameObject spawnPrefab;
     [SerializeField] private float spawnTime = 10f;
+    public bool alive;
 
     private float spawnCounter;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnCounter = spawnTime;        
+        spawnCounter = spawnTime;  
+        alive = true;      
     }
 
     // Update is called once per frame
